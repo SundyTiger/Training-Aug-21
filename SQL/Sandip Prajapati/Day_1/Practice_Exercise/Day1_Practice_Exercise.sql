@@ -67,12 +67,11 @@ ALTER TABLE Jobs
 ADD CONSTRAINT pjbkey PRIMARY KEY (JobId)
 
 SELECT * FROM Jobs
-INSERT INTO JobS(JobId,JobTitle,MINSALARY) VALUES
+INSERT INTO JobS(JobId,JobTitle,MINSALARY,MAXSALARY) VALUES
 ('102', 'IT_PROG', '6000'),
 ('101', 'AC_ACCOUNT', '11000'),
 ('103', 'AC_MGR', '11000'),
 ('201',  'MK_REP', '2000')
-INSERT INTO JobS(JobId,JobTitle,MAXSALARY) VALUES
 ('114', 'ST_CLERK_1', '5000'),
 ('122',  'ST_CLERK', '5000'),
 ('200',  'AD_ASST', '9000'),
@@ -246,27 +245,3 @@ INSERT INTO Employees (Employee_Id,FirstName,LastName , Email, PhoneNumber, Hire
 ('204', 'Hermann', 'Baer', 'HBAER', '515.123.8888', '1987-09-29', 'PR_REP', '10000.00', '0.00', '101', '70'),
 ('205', 'Shelley', 'Higgins', 'SHIGGINS', '515.123.8080', '1987-09-30', 'AC_MGR', '12000.00', '0.00', '101', '110'),
 ('206', 'William', 'Gietz', 'WGIETZ', '515.123.8181', '1987-10-01', 'AC_ACCOUNT', '8300.00', '0.00', '205', '110')
-
-
---ASSIGNMENT-DAY-1
-CREATE TABLE CAR_SALES
-(
-Employees_Id int CONSTRAINT pk_em_key PRIMARY KEY ,
-Inventury_Id int NOT NULL UNIQUE  ,
-Salesman_Id int NOT NULL UNIQUE , 
-CONSTRAINT fkem_id FOREIGN KEY (Employees_Id) REFERENCES DBO.Employees(Employee_Id)
-)
-CREATE TABLE Inventury 
-(
-Inventury_Id int Constraint fjk_inv_key FOREIGN KEY REFERENCES DBO.CAR_SALES(Inventury_Id),
-CAR_MODEL VARCHAR(30) NOT NULL,
-CAR_TYPE VARCHAR(15) NOT NULL ,
-CHECK(CAR_TYPE IN ('PETROL','DIESEL','CNG','ELECTRIC'))
-)
-CREATE TABLE SALES
-(
-Salesman_ID INT Constraint fk_sl_key FOREIGN KEY REFERENCES DBO.CAR_SALES(Salesman_Id),
-total_sales INT NOT NULL,
-Salesman_name VARCHAR(50) NOT NULL,
-DOB DATE NOT NULL
-)
