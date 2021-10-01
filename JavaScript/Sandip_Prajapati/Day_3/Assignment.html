@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../Bootstrap/bootstrap-5.1.1-dist/bootstrap-5.1.1-dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Assignment Day 3</title>
+</head>
+<body>
+    <div class="container-fluid my-3 bg-light border border-dark" style="width: 26vw;">
+        <form class="mx-auto">
+            <caption>Employee Form</caption>
+            <div class="form-group"> <label>Employee ID:</label>
+            <input class="form-control" type="text" id="empid"  required></div><br>
+            <div class="form-group"> <label>Employee Name:</label>
+            <input class="form-control" type="text" id="empname" required></div><br>
+            <div class="form-group"> <label>Age:</label>
+            <input class="form-control" type="text" id="age" required></div><br>
+            <div class="form-group"> <label>Gender:</label>
+            <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" id="male" name="gender"><label class="form-check-label">Male</label>
+            </div>
+            <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" id="female" name="gender"><label class="form-check-label">FeMale</label>
+            </div>
+            <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" id="others" name="gender"><label class="form-check-label">Others</label></div>
+            </div><br/>
+            <div class="form-group"> <label>Designation:</label>
+            <input class="form-control" type="text" id="design" required></div><br>
+            <div class="form-group"> <label>Salary:</label>
+            <input class="form-control" type="text" id="salary" required></div><br>
+            <div class="form-group"> <label>Location: </label>
+                <select class="form-select" id="location" name="location">
+                <option>Ahmedabad</option>
+                <option>Gandhinagar</option>
+                <option>Sabarkatha</option>
+            </select>
+            </div>
+            <div class="form-group"> <label>Email ID:</label>
+            <input class="form-control" type="text" id="email" required></div><br> 
+            <div class="form-group"> <label>Date of Joining:</label>
+            <input class="form-control" type="date" id="date" required></div><br> 
+            <div class="form-group"> <label>Contact Number:</label>
+            <input class="form-control" type="text" id="contact" required></div><br> 
+            <div class="row">
+            <div class="form-group col mb-2">
+            <button class="btn btn-outline-success" type="submit" onclick="Validation()">Submit</button>
+            </div>
+            <div class="form-group col mb-2">
+            <button class="btn btn-outline-danger" type="reset">Reset</button>
+            </div>
+            </div>
+        </form>
+    </div>
+    <script src="../Day_3/Assignment.js"></script>
+    <script src="../Bootstrap/bootstrap-5.1.1-dist/bootstrap-5.1.1-dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
