@@ -1,0 +1,12 @@
+.row{
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: cornflowerblue;
+}
+.column{
+    flex: 25%;
+    max-width: 25%;
+    padding: 0px 5px;
+}

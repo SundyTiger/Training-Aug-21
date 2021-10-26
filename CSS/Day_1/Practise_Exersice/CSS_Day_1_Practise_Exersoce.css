@@ -1,0 +1,35 @@
+#floatdiv div{
+    float: left;
+    margin: auto;
+    border: 1px red dashed;
+    margin: 10px;
+    width:420px;
+
+}
+#staticdiv{
+    position:  static;
+    border: 1px solid skyblue;
+}
+
+#relativediv{
+    position:relative;
+    border: 2px dashed rebeccapurple;
+    left: 30px;
+}
+#fixeddiv{
+    position: fixed;
+    border: 1px firebrick;
+    border-style: dotted;
+}
+#absolutediv{
+    position:absolute;
+    border:1px aliceblue;
+    border-style: groove;
+}
+#overflow{
+    overflow: scroll;
+    width: 200px;
+    height: 250px;
+    margin: 50px;
+    border:1px orange outset;
+}

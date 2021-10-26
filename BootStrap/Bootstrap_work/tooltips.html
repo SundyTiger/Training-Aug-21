@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../Bootstrap/bootstrap-5.1.1-dist/bootstrap-5.1.1-dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Tooltips</title>
+</head>
+<body>
+    <div class="container my-2">
+        <!--Tooltips-->
+        <button type="button" class="btn btn-outline-primary" id="hello" data-bs-toggle="tooltip" data-bs-placement="top"    title="tooltip 1">Tooltip 1</button>
+        <button type="button" class="btn btn-outline-danger"  data-bs-toggle="tooltip" data-bs-placement="bottom" title="tooltip 2">Tooltip 2</button>
+        <button type="button" class="btn btn-outline-warning" data-bs-toggle="tooltip" data-bs-placement="right"  title="tooltip 3">Tooltip 3</button>
+        <button type="button" class="btn btn-outline-success" data-bs-toggle="tooltip" data-bs-placement="left"    title="tooltip 4">Tooltip 4</button>
+        <br>
+        <!--Tooltips-with-Html-->
+        <button type="button" class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top"  data-bs-html="true"  title="<h3>Hello Word</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>">Tooltip with HTML</button>
+            <br>
+        <!--Trigger-with-JS-->
+        <button type="button" class="btn btn-info" onclick="showTooltip()">Tooltip Show</button>
+        <button type="button" class="btn btn-info" onclick="hidetooltip()">Tooltip Hode</button>
+        <button type="button" class="btn btn-info" onclick="toggletooltip()">Tooltip Toggle</button>
+    </div>
+    <script>
+        $('[data-bs-toggle="tooltip"]').tooltip();
+        function showTooltip(){
+            $('#hello').tooltip('show');
+        }
+    </script>
+    <script src="../Bootstrap/bootstrap-5.1.1-dist/bootstrap-5.1.1-dist/js/bootstrap.bundle.js">
+    </script>
+</body>
+</html>

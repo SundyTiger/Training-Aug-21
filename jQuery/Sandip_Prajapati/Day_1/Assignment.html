@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../jQueery/jquery.min.js"></script>
+    <script>
+        $(document).ready(
+            function(){
+                $('select').on('click',function(){
+                    $('label').text('').append();
+                    $('label').append(("Your Selected Country: "+$(this).val()))
+                })
+            }
+        )
+    </script>
+    <title>jQuery Assignment</title>
+</head>
+<body>
+    <select name="country Name">
+        <option value="India United Kingdom Sweden Australia Swizerland">Please Select</option>
+        <option value="India">India</option>
+        <option value="United Kingdom">United Kingdom</option>
+        <option value="Sweden">Sweden</option>
+        <option value="Australia">Australia</option>
+        <option value="Swizerland">Swizerland</option>
+    </select>
+    <br/>
+    <label></label>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .bor {
+            border: 5px dotted blue;
+        }
+
+        @media(max-width:500px) {
+            .bor {
+                border: 5px dashed red;
+                display: none;
+                font-size: 30px;
+            }
+
+        }
+
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (min-width: 600px) {
+            .bor{
+                background: green;
+                font-size: 80px;
+
+            }
+        }
+
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (min-width: 768px) {
+            .bor{
+                background: blue;
+            }
+        }
+
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {
+            .bor{
+                background: orange;
+            }
+        }
+
+        /* Extra large devices (large laptops and desktops, 1200px and up) */
+        @media only screen and (min-width: 1200px) {
+            .bor{
+                background: pink;
+            }
+        }
+    </style>
+    <title>Media Query</title>
+</head>
+
+<body>
+    <!--1.You have one h1 and one paragraph in your page with blue color border. For all the media screen and query selector (maximum width 500px) it should be change to red color border.-->
+    <!--2.Media queries with breakpoint-->
+    <!--Change Font size with Media Queries-->
+    <h1 class="bor">Hi This is Border for H1</h1>
+    <p class="bor">HI This Is Border For P</p>
+
+</body>
+
+</html>

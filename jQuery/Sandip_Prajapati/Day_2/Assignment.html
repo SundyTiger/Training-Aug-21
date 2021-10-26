@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../jQueery/jquery.min.js"></script>
+    <script>
+        $(document).ready(
+            function(){
+                    $.getJSON("https://gorest.co.in/public-api/users",function(jsondata)
+                    {
+                        function data(data)
+                        {
+                        var Id = $("<td></td>").text(data.id)
+                        var Name = $("<td></td>").text(data.name)
+                        var Email = $("<td></td>").text(data.email)
+                        var Gender = $("<td></td>").text(data.gender)
+                        var Status = $("<td></td>").text(data.status)
+                        $("table").append($("<tr></tr>").append(Id,Name,Email,Gender,Status))
+                        }
+                        $.each(jsondata.data,function(index,value){
+                            data(value);
+                        })
+                    })
+                
+            }
+        )
+    </script>
+    <title>jQuery Day 2 Exersice</title>
+</head>
+<body>
+    <!-- Use getJSON method access this web api  https://gorest.co.in/public-api/users and display the result in one table. -->
+    <table id="table">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Gender</th>
+            <th>Status</th>
+        </tr>
+    </table>
+    
+</body>
+</html>

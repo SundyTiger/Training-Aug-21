@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../jQueery/jquery.min.js"></script>
+    <script>
+
+        $(document).ready(() => {
+            //Create one paragraph, add some dummy text and apply blue background color using jquery
+            var ptag = $('<span></span><br/>').text('It is Dummy Text');
+            ptag.css('background-color', 'blue')
+            $('body').prepend(ptag)
+            //There is one Hide/show the text inside the #helpText span element when the user’s mouse passes over the text “
+            var span = $('<span id="helpText"></span><br/>').text('It is Some Text Remember It')
+            $('body').prepend(span);
+            // $('#helpText').on({
+            //     mouseenter:function(){ $(this).hide()},
+            //     mouseleave:function(){$(this).show()}
+            // })
+            $('#helpText').hover(function () { $(this).hide() }, function () { $(this).show() })
+            //Label : “Please select your technology :”
+
+            // – Consider following set of radio buttons :-
+
+            // “PHP”, “ASP.NET”, “ASP”, “JSP”, “PERL”, “Cold Fusion”, “Other”. Layout these buttons in a Horizontal manner.
+
+            // – Clicking on a particular radio button should display the related technology name besides label : “You have  selected : “.
+
+            // – Use multiple “span” HTML element for displaying the related message.
+
+            // – Note that radio button should be selectable by clicking on the corresponding label.
+                $(':radio').on('click',function(){
+                    $('label').text("").append();
+                    $('label').append(("You have selected: " + $(this).val()))})
+        })
+    </script>
+    <title>jQuery Day 1 Practice Exersice</title>
+</head>
+<body>
+    <input type="radio" name="tech" value="PHP"><span id="php">PHP</span>
+    <input type="radio" name="tech" value="ASP.NET"><span>ASP.NET</span>
+    <input type="radio" name="tech" value="ASP"><span>ASP</span>
+    <input type="radio" name="tech" value="JSP"><span>JSP</span>
+    <input type="radio" name="tech" value="PERL"><span>PERL</span>
+    <input type="radio" name="tech" value="Cold Fusion"><span>Cold Fusion</span>
+    <input type="radio" name="tech" value="Other"><span>Other</span><br/>
+    <label></label>
+</body>
+</html>

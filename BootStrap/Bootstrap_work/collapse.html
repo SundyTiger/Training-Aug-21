@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../Bootstrap/bootstrap-5.1.1-dist/bootstrap-5.1.1-dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Collapse</title>
+</head>
+
+<body>
+    <div class="container my-3">
+        <button class="btn btn-outline-primary d-block my-3" data-bs-toggle="collapse"
+            data-bs-target="#collapse-btn-1">Read more</button>
+        <div class="collapse mb-3" id="collapse-btn-1">
+            <div class="card">
+                <div class="card-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Consequuntur sequi labore qui molestiae culpa aut error
+                    corporis nihil impedit, accusamus nobis maxime ex enim.
+                    Possimus inventore laborum dolore amet magnam.
+                </div>
+            </div>
+        </div>
+        <!--Accordion-->
+        <div id="accordion" role="tablist">
+            <div class="card">
+                <div class="card-header" role="tab" id="heading">
+                    <h3 class="mb-0">
+                        <a href="#collapseone" data-bs-parent="#accordion" data-bs-toggle="collapse">Collapse One</a>
+                    </h3>
+                </div>
+                <div class="collapse show" id="collapseone">
+                    <div class="card-body">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Consequuntur sequi labore qui molestiae culpa aut error
+                        corporis nihil impedit, accusamus nobis maxime ex enim.
+                        Possimus inventore laborum dolore amet magnam.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" role="tab" id="heading">
+                    <h3 class="mb-0">
+                        <a href="#collapsetwo" data-bs-parent="#accordion" data-bs-toggle="collapse">Collapse Two</a>
+                    </h3>
+                </div>
+                <div class="collapse" id="collapsetwo">
+                    <div class="card-body">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Consequuntur sequi labore qui molestiae culpa aut error
+                        corporis nihil impedit, accusamus nobis maxime ex enim.
+                        Possimus inventore laborum dolore amet magnam.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" role="tab" id="heading">
+                    <h3 class="mb-0">
+                        <a href="#collapsethree" data-bs-parent="#accordion" data-bs-toggle="collapse">Collapse Three</a>
+                    </h3>
+                </div>
+                <div class="collapse" id="collapsethree">
+                    <div class="card-body">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Consequuntur sequi labore qui molestiae culpa aut error
+                        corporis nihil impedit, accusamus nobis maxime ex enim.
+                        Possimus inventore laborum dolore amet magnam.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../Bootstrap/bootstrap-5.1.1-dist/bootstrap-5.1.1-dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

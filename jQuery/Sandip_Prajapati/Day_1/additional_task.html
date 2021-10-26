@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../jQueery/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var jsondata = [{ "ID": 1, "Name": "Sandip", "Address": "Himatnagar" },
+            { "ID": 2, "Name": "Koli", "Address": "Himatnagar" },
+            { "ID": 3, "Name": "Limbani", "Address": "Himatnagar" }]
+            // $.each(jsondata, function (index, value) {
+            //     $('#table').append(
+            //         $("<tr></tr>")
+            //             .append($("<td></td>").text(value.ID))
+            //             .append($("<td></td>").text(value.Name))
+            //             .append($("<td></td>").text(value.Address))
+            //     )
+
+            // })
+            // $.each(jsondata, function (index, value) {
+            // //     var id  = $("<td></td>").text(value.ID);
+            // //     var name  = $("<td></td>").text(value.Name);
+            // //     var addr  = $("<td></td>").text(value.Address);
+            // // var id = $("<td>" + value.ID + "</td>")
+            // // var name = $("<td>" + value.Name + "</td>");
+            // // var addr = $("<td>" + value.Address + "</td>")
+            // //     $('#table').append(
+            // //         $("<tr></tr>").append(id,name,addr)
+            // //     )
+
+            // })
+            $.each(jsondata, function (index, value) {
+                var id  = $("<td></td>").text(value.ID);
+                var name  = $("<td></td>").text(value.Name);
+                var addr  = $("<td></td>").text(value.Address)
+                // var trtd =$("<tr><td>"+value.ID+"</td><td>"+value.Name+"</td><td>"+value.Address+"</td></tr>")
+                // trtd.appendTo($("#table"))
+               ( (id+name+addr).appendTo("<tr></tr>")).appendTo($("#table"))
+
+
+            })
+
+        });
+
+    </script>
+    <title>Additional Task jQuery</title>
+</head>
+
+<body>
+    <table id="table">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Address</th>
+        </tr>
+    </table>
+</body>
+
+</html>

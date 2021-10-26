@@ -1,0 +1,47 @@
+.header{
+    margin: 30px 20px 0px 20px;
+    border: 2px magenta solid;
+    background-color: honeydew;
+    height: 50px;
+    text-align: center;
+    font-size: 10px;
+    color:rgb(46, 90, 90);
+
+}
+.section{
+    background-color:silver;
+    position:fixed;
+    border: 1px solid red;
+    padding: 10px;
+    margin: 30px;
+    height:90%;
+    width: 95%;
+}
+.aside{
+margin: 0px 0px 0px 20px;
+border:2px slateblue solid;
+background-color: aqua;
+float: left;
+width: 20%;
+height: 70%;
+}
+.article{
+    border:2px solid aliceblue;
+    height: 70%;
+    background-color: rebeccapurple;
+    margin: 0px 20px 0px 0px;
+    width:76.3%;
+    float: left;
+
+}
+.footer{
+position: relative;
+border: 2px blue solid;
+margin: 0px 20px 30px 20px;
+float:left;
+width: 95%;
+height: 50px;
+background-color: firebrick;
+padding: 10px;
+
+}

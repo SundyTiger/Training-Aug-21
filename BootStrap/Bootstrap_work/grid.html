@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../Bootstrap/bootstrap-5.1.1-dist/bootstrap-5.1.1-dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Grid</title>
+</head>
+<body>
+    <div class="container-fluid my-2">
+    <!--Responsive-Grid-->
+    <div class="row">
+        <div class="col-sm-6 col-md-8 col-lg-9 col-xl-10 border border-dark">Grid Col-6 small
+            Col-8 for Medium
+            Col-9 for Large
+            Col-10 for XLarge
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 border border-dark">Grid col-6 small
+            Col-4 for Medium
+            Col-3 for Large
+            Col-2 for XLarge
+        </div>
+    </div>
+    <div class="row">
+        <div class="col border border-dark">Equal Width</div>
+        <div class="col border border-dark">Equal Width</div>
+        <div class="col border border-dark">Equal Width</div>
+    </div>
+    <!--Multi-Row-->
+    <div class="row">
+        <div class="col border border-dark">Width 1</div>
+        <div class="col border border-dark">Width 2</div>
+        <div class="w-100"></div>
+        <div class="col border border-dark">Width 3</div>
+        <div class="col border border-dark">Width 4</div>
+    </div>
+    <!--Auto-Layout-->
+    <div class="row">
+        <div class="col border border-dark">Width 1</div>
+        <div class="col-6 border border-dark">Width 2</div>
+        <div class="col-4 border border-dark">Width 3</div>
+    </div>
+    <!--Equal-With-Stack-->
+    <div class="row">
+        <div class="col-sm border border-dark order-2">Width --Equal-With-Stack--</div>
+        <div class="col-sm border border-dark order-3">Width --Equal-With-Stack--</div>
+        <div class="col-sm border border-dark order-1">Width --Equal-With-Stack--</div>
+    </div>
+    <!--OrDERING-->
+    <div class="row">
+        <div class="col border border-dark order-2">Width 1</div>
+        <div class="col border border-dark order-3">Width 2</div>
+        <div class="col border border-dark order-1">Width 3</div>
+    </div>
+    <!--OFFSET-->
+    <div class="row">
+        <div class="col-md-4 border border-dark">Width 1</div>
+        <div class="col-md-4 ms-auto border border-dark">Width 2</div>
+    </div>
+    <div class="row">
+        <div class="col-md-3 ms-auto border border-dark">Width 1</div>
+        <div class="col-md-3 ms-auto border border-dark">Width 2</div>
+    </div>
+    <!--Nesting-Row-->
+    <div class="row">
+        <div class="col-6 border border-dark">Width 1
+        <div class="row">
+        <div class="col-6 border border-dark">Width 2</div>
+        <div class="col-6 border border-dark">Width 3</div>
+        </div>
+        </div>
+    </div>
+    <!--Alignment-->
+    <div class="container-fluid my-3">
+    <div class="row border border-dark align-items-start" style="height: 200px;">
+        <div class="col">Width 1</div>
+        <div class="col">Width 2</div>
+        <div class="col">Width 3</div>
+    </div>
+    <div class="row border border-dark align-items-center" style="height: 200px;">
+        <div class="col">Width 1</div>
+        <div class="col">Width 2</div>
+        <div class="col">Width 3</div>
+    </div>
+    <div class="row border border-dark align-items-end" style="height: 200px;">
+        <div class="col">Width 1</div>
+        <div class="col">Width 2</div>
+        <div class="col">Width 3</div>
+    </div>
+    <div class="row border border-dark" style="height: 200px;">
+        <div class="col align-self-start">Width 1</div>
+        <div class="col align-self-center">Width 2</div>
+        <div class="col align-self-end">Width 3</div>
+    </div>
+    <div class="row border border-dark justify-content-start" style="height: 100px;">
+        <div class="col-4">Width 1</div>
+        <div class="col-4">Width 2</div>
+    </div>
+    <div class="row border border-dark justify-content-center" style="height: 100px;">
+        <div class="col-4">Width 1</div>
+        <div class="col-4">Width 2</div>
+    </div>
+    <div class="row border border-dark justify-content-end" style="height: 100px;">
+        <div class="col-4">Width 1</div>
+        <div class="col-4">Width 2</div>
+    </div>
+    <div class="row border border-dark justify-content-around" style="height: 100px;">
+        <div class="col-4">Width 1</div>
+        <div class="col-4">Width 2</div>
+    </div>
+    <div class="row border border-dark justify-content-between" style="height: 100px;">
+        <div class="col-4">Width 1</div>
+        <div class="col-4">Width 2</div>
+    </div>
+    </div>
+    </div>
+    <script src="../Bootstrap/bootstrap-5.1.1-dist/bootstrap-5.1.1-dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

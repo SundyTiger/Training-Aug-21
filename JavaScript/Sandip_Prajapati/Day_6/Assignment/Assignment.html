@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../Bootstrap/bootstrap-5.1.1-dist/bootstrap-5.1.1-dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Day 6 Assignment</title>
+</head>
+
+<body> 
+    <table>
+        <tr>
+            <th>ProductID</th>
+            <th>ProductName</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td id="id1">1</td>
+            <td id="product1">Cheese</td>
+            <td id="price1">100</td>
+            <td id="quantity1">1</td>
+            <td><button type="button" onclick="addData(id1.innerText,product1.innerText,price1.innerText,quantity1.innerText)">Add To Cart</button></td>
+        </tr>
+        <tr>
+            <td id="id2">2</td>
+            <td id="product2">Pen</td>
+            <td id="price2">150</td>
+            <td id="quantity2">2</td>
+            <td><button type="button" onclick="addData(id2.innerText,product2.innerText,price2.innerText,quantity2.innerText)">Add To Cart</button></td>
+        </tr>
+        <tr>
+            <td id="id3">3</td>
+            <td id="product3">Butter</td>
+            <td id="price3">100</td>
+            <td id="quantity3">1</td>
+            <td><button type="button" onclick="addData(id3.innerText,product3.innerText,price3.innerText,quantity3.innerText)">Add To Cart</button></td>
+        </tr>
+        <tr>
+            <td id="id4">4</td>
+            <td id="product4">Pencil</td>
+            <td id="price4">10</td>
+            <td id="quantity4">1</td>
+            <td><button type="button" onclick="addData(id4.innerText,product4.innerText,price4.innerText,quantity4.innerText)" >Add To Cart</button></td>
+        </tr>
+    </table>
+    <button type="button" onclick="showdata()" >Show In Console</button>
+<script src="../Day_6/Assignment.js"></script>
+<script src="../Bootstrap/bootstrap-5.1.1-dist/bootstrap-5.1.1-dist/js/bootstrap.bundle.js"></script>
+
+</html>
