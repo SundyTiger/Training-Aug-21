@@ -1,0 +1,83 @@
+body{
+    font-family: "sans-serif","Roboto","HelveticaNeue-Light",;
+}
+.bodyclr0{
+    background-color: #141b29;
+}
+
+@media(min-width:768px){
+    .margin{
+        margin-left: 30vw;
+    }
+}
+.searchIcon{
+    background:url("./../icon/search.svg") no-repeat right;
+    background-size: 15px;
+}
+.line{
+    width: 18px;
+    height: 2px;
+    background-color:rgba(255,255,255, 0.6);
+    margin:3px 0;
+}
+.bodyclr1{
+    background-color: #192133;
+}
+.hoverclr1:hover{
+    background-color: #141b29;
+}
+.iconClass{
+    background: url("https://www.hotstar.com/assets/2220b001005f901871764a12537e6407.svg") no-repeat;
+    width: 22px;
+    height: 22px;
+}
+.cardclr1{
+    background-color: #030b17;
+}
+.linkhover{
+    color: white;
+    font-size: 14px;
+}
+.linkhover:hover{
+    color: #1f80e0;
+}
+.fa {
+    font-size: 25px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 10px;
+    border-radius: 10%;
+  }
+  
+  .fa:hover {
+      background-color: #1f80e0;
+      color: white;
+  }
+  
+  .fa-facebook {
+    background:rgb(25, 33, 51);
+    ;
+    color:rgb(177, 195, 211);
+  }
+  .fa-twitter {
+    background:rgb(25, 33, 51);
+    color: rgb(177, 195, 211);
+  }
+  .backgroundclr1{
+      background-color: rgba(31,127,224,0.1);
+  }
+  .backgroundclr2
+  {
+      background-color: transparent;
+  }
+  .btn-close{
+      background-color: transparent !important;
+  }
+  a .fa:hover{
+      background-color: transparent;
+  }
+  .btn-primary .fa:hover{
+      background-color: transparent;
+  }
