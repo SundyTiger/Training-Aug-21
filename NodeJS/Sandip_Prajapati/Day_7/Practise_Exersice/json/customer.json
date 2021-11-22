@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "customerName": "Sandip Prajapati",
+        "item": "realme Buds"
+    },
+    {
+        "id": 2,
+        "customerName": "Harsh Prajapati",
+        "item": "boult Buds"
+    },
+    {
+        "id": 3,
+        "customerName": "Ravi Koli",
+        "item": "Boat NeckBand"
+    },
+    {
+        "id": 4,
+        "customerName": "Mahesh Limbat",
+        "item": "Boat Airdopes"
+    }
+]
