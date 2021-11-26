@@ -1,0 +1,14 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var Vacancy_1 = require("./Vacancy");
+var enum_1 = require("./enum");
+var Applicant_1 = require("./Applicant");
+var Scheduling_1 = require("./Scheduling");
+var Result_1 = require("./Result");
+var vacant1 = new Vacancy_1.Vacancie(1, 'Developer', 'IT', 300000, enum_1.VStatus.open);
+vacant1.vacancieDataStore();
+var applicant = new Applicant_1.Applicant(1, 'Sandip', 2, 'Engineering', 'Developer', 500000000, 'Himatnagar', 1);
+applicant.applicantDataStore();
+var scheduled = new Scheduling_1.SchedulingInterview(1, 1, 1, 'Dec 14 2020', 'Ahmedabad');
+scheduled.siDataStore();
+var result = new Result_1.InterviewResult(1, 1, 1, enum_1.Rstatus.Selected);
